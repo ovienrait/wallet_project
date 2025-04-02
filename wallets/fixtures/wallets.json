@@ -1,0 +1,23 @@
+[
+    {
+        "model": "wallets.Wallet",
+        "pk": "123e4567-e89b-12d3-a456-426614174000",
+        "fields": {
+            "balance": 1000
+        }
+    },
+    {
+        "model": "wallets.Wallet",
+        "pk": "456e7890-e89b-12d3-a456-426614174001",
+        "fields": {
+            "balance": 500
+        }
+    },
+    {
+        "model": "wallets.Wallet",
+        "pk": "456e7890-e89b-12d3-a456-426614174002",
+        "fields": {
+            "balance": 700
+        }
+    }
+]

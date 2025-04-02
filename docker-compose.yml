@@ -1,0 +1,25 @@
+volumes:
+  db_data:
+
+services:
+  db:
+    image: postgres:15
+    env_file: .env
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+  app:
+    build: ./
+    env_file: .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    command: >
+      sh -c "sleep 5 &&
+             python manage.py migrate &&
+             python manage.py loaddata wallets/fixtures/wallets.json &&
+             sleep 2 &&
+             pytest &&
+             python manage.py runserver 0:8000"
