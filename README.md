@@ -3,6 +3,7 @@
 ## Описание
 
 Этот проект представляет собой реализацию REST API приложения для работы с моделью Wallet.<br>
+
 Приложение может принимать и обрабатывать следующие запросы:<br>
 GET api/v1/wallets/<wallet_uuid> - получение баланса кошелька<br>
 POST api/v1/wallets/<wallet_uuid>/operation - проведение операций с кошельком
@@ -44,6 +45,6 @@ http://localhost:8000/api/docs
 
 ## Контакты
 
-Artem Maksimov - [@ovienrait](https://t.me/ovienrait) - [nirendsound@gmail.com](https://nirendsound@gmail.com)
+Артем Максимов - [@ovienrait](https://t.me/ovienrait) - [nirendsound@gmail.com](https://nirendsound@gmail.com)
 
-Project Link: [Wallet Project](https://github.com/ovienrait/wallet_project.git)
+Ссылка на проект: [Wallet Project](https://github.com/ovienrait/wallet_project.git)
